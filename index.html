@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="form">
+
+      <!-- ERROR MESSAGE -->
+      <div class="noNum">
+        <p>Please check the numbers</p>
+      </div>
+
+      <h1>Loan Calculator</h1>
+
+      <!-- TEXT FIELDS -->
+      <form class="form-data">
+        <div class="fields">
+
+          <div class="wrap">
+            <i class="fas fa-dollar-sign"></i><input class="amount" type="text" placeholder="Amount">
+          </div>
+
+          <div class="wrap">
+            <i class="fas fa-percentage"></i><input class="interest" type="text" placeholder="Interest Rate">
+          </div>
+
+          <div class="wrap">
+            <i class="fas fa-calendar"></i><input class="years" type="text" placeholder="Number of Years">
+          </div>
+
+          <!-- BUTTON -->
+          <input type="submit" value="Calculate">
+        </div>
+      </form>
+
+
+      <!-- RESULT -->
+      <div class="fullResult">
+
+        <h2>Results</h2>
+
+        <div class="wrapResult forResult">
+          <span class="resultLabel">Monthly Payment</span><input class="result resultMonth" type="text" disabled>
+        </div>
+
+        <div class="wrapResult forResult">
+          <span class="resultLabel">Total Payment</span><input class="result resultTotal" type="text" disabled>
+        </div>
+
+        <div class="wrapResult forResult">
+          <span class="resultLabel">Total Interest</span><input class="result resultInterest" type="text" disabled>
+        </div>
+
+        <button>Clear All</button>
+        
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/loan.js"></script>
+</body>
+
+</html>
